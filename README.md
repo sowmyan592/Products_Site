@@ -37,5 +37,5 @@ SET IDENTITY_INSERT [dbo].[ProductDetails] OFF
 
 
 3. Please check the IP Address in the Config file.
-4. Please register if you are new user now and they you can login and when login you can see the list of products button.
+4. Please register if you are new user now and then you can login and when login you can see the list of products button.
 5. Click the list of products to see the products as now no data will be present so please add some products before viewing the list of products
