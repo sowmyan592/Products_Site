@@ -1,0 +1,9 @@
+﻿.img {
+    border-radius: 20px;
+}
+@media (minwidth:1200px){
+    .imagwid {
+        
+        width: 150px;
+    }
+}

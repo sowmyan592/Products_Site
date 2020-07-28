@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Products_Site.Models.ProductDetail>
+<link href="~/Scripts/CSS/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+
+
+@if (Request.IsAuthenticated)
+{
+
+   // <span>Welcome @Html.Encode(User.Identity.Name) </span>
+   <div class="" style="margin-top:100px !important">
+       <a class="nav-link" href="#">@Html.ActionLink("Add_Product", "Product", "Account")<br /></a>
+       <a class="nav-link" href="#"> @Html.ActionLink("List of Produts", "Products_View")</a>
+   </div>
+}
+else
+{
+    <div class="container" style="margin-top:100px !important">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <img class="imagwid img" src="~/Scripts/src/Attachments/Main_Image.jpg" />
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                Many of the companies here found success selling business-to-business: stocking retail stores, restaurants and cafes that are now closed. What they lack right now is a strong base of direct customers. Customers like you.<br/>
+                <br/>
+
+                Customers who are thinking, ‘how do I get what I need when I’m stuck at home?’<br/>
+                <br/>
+
+                Customers who want more choice than giant chain stores provide<br/>
+                <br/>
+
+                Customers who want a future where artisanal producers can survive<br/>
+                <br/>
+
+                That’s what this website is for. Every business listed here is open and able to deliver. Sure, some of their websites might look a little clunky. Maybe you’ll need to pick up the phone to buy. But that’s not their main problem right now. Their problem is, they just need you to find them.<br/>
+                <br/>
+
+                So, customers: meet your new favourite business. Businesses: meet your new favourite customer. We’re sure you’ll get along.<br/>
+                <br/>
+
+            </div>
+        </div>
+    </div>
+}
