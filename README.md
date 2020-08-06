@@ -3,6 +3,21 @@
 1. If you are running the Project Please run it through controller which is Home Controller
 2. For the Queries of the DB As please run the below commands
 
+Please check the Entity Frame work whether it is connection done or not , if not Follow these steps
+
+-=-Right Click on Project Click on Add and then click on ADO.NET Entity Data Model
+---Provide the Model Name and click on Ok.
+---Click on EFDesigner from data and clcik on next
+---Provide the connection name or else create new connection  and provide server name and credentials of the authentiacation if needed 
+---Now select the database and check the test connection and click on Okay
+---Select the Tables of ProductDetails and RegiterUser 
+
+
+-->SQL 
+
+Create the database of name test
+CREATE DATABASE test
+
 CREATE TABLE [dbo].[RegisterUser](
 	[Id] [int] IDENTITY(1,1) NOT NULL primary key,
 	[FirstName] [varchar](100) NOT NULL,
@@ -32,8 +47,6 @@ CREATE TABLE [dbo].[ProductDetails](
 SET IDENTITY_INSERT [dbo].[ProductDetails] ON 
 
 SET IDENTITY_INSERT [dbo].[ProductDetails] OFF
-
-
 
 
 3. Please check the IP Address in the Config file.
