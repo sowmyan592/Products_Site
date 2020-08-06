@@ -16,6 +16,7 @@ Please check the Entity Frame work whether it is connection done or not , if not
 -->SQL 
 
 Create the database of name test
+
 CREATE DATABASE test
 
 CREATE TABLE [dbo].[RegisterUser](
